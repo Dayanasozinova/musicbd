@@ -17,9 +17,9 @@ connection.execute("""INSERT INTO album_singer (id, album, singer)
                   (8, 8, 1);
 """)
 #----------------------------------------------------------------------
-connection.execute("""INSERT INTO album (id, akbum_name, yars_of_issue)    
+connection.execute("""INSERT INTO albums (id, akbum_name, yars_of_issue)    
            VALUES (1, 'Spring', 1987),
-                  (2, 'Five', 2019),
+                  (2, 'Five', 2020),
                   (3, 'Jazz', 2007),
                   (4, 'The little boy', 2017),
                   (5, 'My spirit', 2000),
