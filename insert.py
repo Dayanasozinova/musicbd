@@ -16,7 +16,7 @@ connection.execute("""INSERT INTO album_singer (id, album, singer)
                   (7, 7, 2),
                   (8, 8, 1);
 """)
-#----------------------------------------------------------------------
+#------------изменен-год-выпуска-альбома-FIVE----------------------------
 connection.execute("""INSERT INTO albums (id, akbum_name, yars_of_issue)    
            VALUES (1, 'Spring', 1987),
                   (2, 'Five', 2020),
@@ -85,7 +85,8 @@ connection.execute("""INSERT INTO track (id, track_name, album, duration)
                   (12, 'Мой милый', 5, 456),
                   (13, 'Moon', 8, 159),
                   (14, 'Dog', 1, 358),
-                  (15, '-', 6, 753);
+                  (15, '-', 6, 753),
+                  (16, 'Нету в сборнике', 3, 100);
 """)
 #-------------------------------------------------------------------------------
 connection.execute("""INSERT INTO track_collection (id, collection, track)    
@@ -112,4 +113,9 @@ connection.execute("""INSERT INTO track_collection (id, collection, track)
                   (21, 5, 13),
                   (22, 6, 14),
                   (23, 7, 15);
+""")
+#-----добавлен-трек-НЕТУ-В-СБОРНИКЕ-----------------------------------
+connection.execute("""INSERT INTO track (id, track_name, album, duration)    
+           VALUES 
+                  (16, 'Нету в сборнике', 3, 100);
 """)
